@@ -27,6 +27,7 @@ export const LoginForm = (props: LoginFormProps) => {
                 return;
             }
             const passcode = MD5(value).toString().toLocaleLowerCase();
+            console.log("passcode md5", value, passcode);
             if (passcodes.includes(passcode)) {
                 const { checked: remember } =
                     autoLoginCheckboxRef.current || {};

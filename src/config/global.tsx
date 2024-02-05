@@ -25,7 +25,7 @@ const passcodes =
         ?.split("|")
         .filter((v) => !!v.length)
         .map((v) => v.trim().toLocaleLowerCase()) ?? [];
-
+console.log("passcodes", passcodes);
 export const globalConfig = {
     passcodes,
     keys,
